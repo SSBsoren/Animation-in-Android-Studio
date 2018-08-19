@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.soren.sagen.animation.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANIMATION"
+        android:id="@+id/alertTV"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sagen Soren"
+        android:textSize="35sp"
+        android:id="@+id/sagenTV"
+        android:textColor="#ff3eff0f"
+        android:layout_below="@id/alertTV"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="430dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/sagenTV"
+        android:layout_alignRight="@+id/sagenTV"
+        android:layout_alignEnd="@+id/sagenTV"
+        android:layout_alignLeft="@+id/alertTV"
+        android:layout_alignStart="@+id/alertTV"
+        android:src="@drawable/imgirl"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoom"
+        android:id="@+id/zoomBtn"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:onClick="zoom"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clockwise"
+        android:id="@+id/clkBtn"
+        android:layout_alignTop="@+id/zoomBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="clockwise"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fade"
+        android:id="@+id/fadeBtn"
+        android:layout_alignTop="@+id/clkBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="fade"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blink"
+        android:onClick="blink"
+        android:layout_below="@+id/zoomBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/moveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clkBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="move"
+        android:text="move" />
+
+    <Button
+        android:id="@+id/slidBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fadeBtn"
+        android:onClick="slide"
+        android:text="slide" />
+
+</RelativeLayout>
